@@ -8,7 +8,17 @@
     <body>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
-			window.open('file:///pdf/progression-in-the-national-curriculum-2014.pdf', '_blank', 'location=yes,EnableViewPortScale=yes');
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function openPDF(){
+            ref = window.open('http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf', '_blank', 'location=yes,EnableViewPortScale=yes');
+            ref.addEventListener('exit', function() {
+                ref.removeEventListener('exit', function(){});
+                ref.close();
+            });
+        }
+		function onDeviceReady() {
+			openPDF();
+		}
 		</script>
     </body>
 </html>
