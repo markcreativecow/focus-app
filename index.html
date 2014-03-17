@@ -4,18 +4,11 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
         <meta name="apple-mobile-web-app-capable" content="yes" />
-		
     </head>
     <body>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
-			document.addEventListener("deviceready", onDeviceReady, false);
-			function onDeviceReady() {
-				setTimeout(function() {
-					navigator.splashscreen.hide();
-					window.open('./pdf/progression-in-the-national-curriculum-2014.pdf', '_blank', 'EnableViewPortScale=yes');
-				}, 10000);
-			}
+			window.open('./pdf/progression-in-the-national-curriculum-2014.pdf', '_blank', 'EnableViewPortScale=yes');
 		</script>
     </body>
 </html>
