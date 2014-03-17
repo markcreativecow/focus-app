@@ -3,12 +3,19 @@
     <head>
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=true">
-        <meta name="apple-mobile-web-app-capable" content="yes" />		
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		
     </head>
     <body>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
-			window.location.href = './pdf/progression-in-the-national-curriculum-2014.pdf';
+			document.addEventListener("deviceready", onDeviceReady, false);
+			function onDeviceReady() {
+				setTimeout(function() {
+					navigator.splashscreen.hide();
+					window.location.href = './pdf/progression-in-the-national-curriculum-2014.pdf';
+				}, 5000);
+			}
 		</script>
     </body>
 </html>
