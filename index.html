@@ -13,8 +13,8 @@
 			function onDeviceReady() {
 				setTimeout(function() {
 					navigator.splashscreen.hide();
-					window.open('http://docs.google.com/viewer?url=.%2Fpdf%2Fprogression-in-the-national-curriculum-2014.pdf', '_blank', 'location=yes');
-					ref = window.open('index.html', '_self');
+					var file = 'pdf/progression-in-the-national-curriculum-2014.pdf';
+					var ref = window.open(encodeURI(file), '_blank', 'location=yes');
 				}, 5000);
 			}
 		</script>
