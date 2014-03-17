@@ -6,9 +6,9 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
     </head>
     <body>
+		<a href="#" onclick="openPDF();">Click Me</a>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
-		document.addEventListener("deviceready", onDeviceReady, false);
 		function openPDF(){
             ref = window.open('http://static.googleusercontent.com/media/www.google.com/en/us/webmasters/docs/search-engine-optimization-starter-guide.pdf', '_blank', 'location=yes,EnableViewPortScale=yes');
             ref.addEventListener('exit', function() {
@@ -16,9 +16,6 @@
                 ref.close();
             });
         }
-		function onDeviceReady() {
-			openPDF();
-		}
 		</script>
     </body>
 </html>
