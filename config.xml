@@ -18,9 +18,8 @@
 	<preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
 	<preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
 	
-	<preference name="AutoHideSplashScreen"		  value="false" />
-	
-	<gap:plugin name="com.phonegap.plugins.childbrowser" />
+	<!-- <preference name="AutoHideSplashScreen"		  value="false" /> -->
+	<preference name="EnableViewportScale" 		  value="true" />
 	
 	<!-- Define app icon for each platform. -->
 	<icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
