@@ -11,6 +11,7 @@
 	<feature name="SplashScreen">
 		<param name="ios-package" value="CDVSplashScreen" />
 	</feature>
+	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true"><false/></gap:config-file>
 
 	
 	<preference name="permissions" value="none"/>
