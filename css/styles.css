@@ -2,3 +2,33 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
+#busy {
+    background-color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+    display: none;
+    height: 90px;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -70px;
+    padding-top: 15px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 140px;
+    z-index: 100;
+    /* CSS3 */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px 0px #6A6A6A;
+    -webkit-box-shadow: 0 0 10px 0px #6A6A6A;
+    box-shadow: 0 0 10px 0px #6A6A6A;
+}
+#busy img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+#busy p {
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -8,11 +8,12 @@
     </head>
     <body>
 		<a href="#" onclick="openTarget();return false;">Click Me</a>
+        <div id="busy">
+            <img src="img/loading.gif" />
+            <p>LOADING</p>
+        </div>
 		<script src="phonegap.js"></script>
-		<script type="text/javascript">
-		function openTarget() {
-			window.open('http://www.learningchallengecurriculum.com/new/assets/resources/progression-in-the-national-curriculum-2014.pdf', '_blank', 'location=no,EnableViewPortScale=yes');
-		}
-		</script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
