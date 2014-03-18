@@ -1,14 +1,4 @@
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { /* Styles */
-	width: 768px; /* Example size */
-    height: 1024px; /* Example size */
-    background: url('../res/screen/ios/screen-ipad-landscape.png');
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
-	   only screen and (min-device-pixel-ratio : 1.5) and (orientation : landscape) { /* Styles */
-	width: 640px; /* Example size */
-    height: 960px; /* Example size */
-    background: url('../res/screen/ios/screen-iphone-landscape-2x.png');
+html, body {
+	height: 100%;
+	width: 100%;
 }
