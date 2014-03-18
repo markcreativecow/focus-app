@@ -6,12 +6,16 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
     </head>
     <body>
+		<a href="#" onclick="openPDF();return false;">Click Me</a>
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
-		document.addEventListener("deviceready", onDeviceReady, false);
-		function onDeviceReady() {
-			window.open('http://www.learningchallengecurriculum.com/new/assets/resources/progression-in-the-national-curriculum-2014.pdf', '_blank', 'location=no,EnableViewPortScale=yes');
-		}
+		function openPDF(){
+            ref = window.open('http://www.learningchallengecurriculum.com/new/assets/resources/progression-in-the-national-curriculum-2014.pdf', '_blank', 'location=no,EnableViewPortScale=yes');
+            ref.addEventListener('exit', function() {
+                ref.removeEventListener('exit', function(){});
+                ref.close();
+            });
+        }
 		</script>
     </body>
 </html>
