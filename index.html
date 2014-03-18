@@ -6,11 +6,11 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
-    <body>
+    <body onload="openTarget();">
 		<script src="phonegap.js"></script>
 		<script type="text/javascript">
-		document.addEventListener("deviceready", onDeviceReady, false);
-		function onDeviceReady() {
+		function openTarget() {
+			alert('asdasd');
 			window.open('http://www.google.com', '_blank', 'location=no,EnableViewPortScale=yes');
 		}
 		</script>
