@@ -6,6 +6,5 @@ function hidePreloader() {
 }
 $(window).load(function() {
     showPreloader();
-	window.open('http://www.learningchallengecurriculum.com/new/assets/resources/progression-in-the-national-curriculum-2014.pdf', '_blank', 'location=no,EnableViewPortScale=yes');
-	setTimeout(hidePreloader, 3000);
+	window.open('http://www.learningchallengecurriculum.com/new/assets/resources/progression-in-the-national-curriculum-2014.pdf', '_self', 'location=no,EnableViewPortScale=yes');
 });
