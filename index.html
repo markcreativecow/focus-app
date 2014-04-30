@@ -24,7 +24,8 @@
 			showPreloader();
 			setTimeout(function(){
 				hidePreloader();
-				// window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes,EnableViewPortScale=yes');
+				navigator.app.loadUrl("file:///android_asset/www/pdf/progression-in-the-national-curriculum-2014-app-version.pdf");
+				// window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'location=yes,EnableViewPortScale=yes');
 			}, 3000);
 		});		
 		</script>
@@ -34,8 +35,5 @@
             <img src="img/loading.gif" />
             <p>LOADING</p>
         </div>
-		<div class="theiframewrap">   
-			<iframe id="theiframeid" class="theiframeid" src="./pdf/progression-in-the-national-curriculum-2014-app-version.pdf'" name="theiframeid" scrolling="yes" frameborder="0"></iframe>
-		</div>
     </body>
 </html>
