@@ -7,14 +7,20 @@
         <link rel="stylesheet" href="css/styles.css" />
 		<script src="phonegap.js"></script>
         <script src="js/jquery.min.js"></script>
-        <script src="js/main.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		document.addEventListener("deviceready", onDeviceReady, false);
-		function onDeviceReady() {
-			setTimeout(function() {
-				navigator.splashscreen.hide();
-			}, 10000);
+		function showPreloader() {
+			$('#busy').show();
 		}
+		function hidePreloader() {
+			$('#busy').hide();
+		}
+		$(window).load(function() {
+			showPreloader();
+			setTimeout(function(){
+				alert('righty ho');
+				//window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'location=yes,EnableViewPortScale=yes');
+			}, 3000);
+		});		
 		</script>
     </head>
     <body>
