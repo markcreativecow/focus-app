@@ -5,6 +5,5 @@ function hidePreloader() {
     $('#busy').hide();
 }
 $(window).load(function() {
-	var devicePlatform = device.platform;
-	alert('test' + devicePlatform);
+	alert('test');
 });
