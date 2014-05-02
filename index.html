@@ -7,23 +7,14 @@
         <link rel="stylesheet" href="css/styles.css" />
 		<script src="phonegap.js"></script>
         <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		function showPreloader() {
-			$('#busy').show();
-		}
-		function hidePreloader() {
-			$('#busy').hide();
-		}
-		function onDeviceReady() {
-			var devicePlatform = device.platform;
-			alert('asdasd' + devicePlatform);
-			if (devicePlatform == 'Android') {
-				window.open('http://docs.google.com/viewer?url=http%3A%2F%2Fwww.focus-education.co.uk%2Fimages%2Fprogression-in-the-national-curriculum-2014-app-version.pdf', '_blank');
-			} else {
-				window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'EnableViewPortScale=yes');
-			}
-		}
 		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
+			setTimeout(function() {
+				navigator.splashscreen.hide();
+			}, 10000);
+		}
 		</script>
     </head>
     <body>
