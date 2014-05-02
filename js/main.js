@@ -8,6 +8,6 @@ $(window).load(function() {
     showPreloader();
 	setTimeout(function(){
 		hidePreloader();
-		window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'location=yes,EnableViewPortScale=yes');
+		window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
 	}, 3000);
 });
