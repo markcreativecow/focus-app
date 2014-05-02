@@ -5,7 +5,9 @@ function hidePreloader() {
     $('#busy').hide();
 }
 $(window).load(function() {
+	showPreloader();
 	var devicePlatform = device.platform;
+	alert(devicePlatform);
 	setTimeout(function(){
 		hidePreloader();
 		if (devicePlatform == 'Android') {
