@@ -11,6 +11,7 @@
 		document.addEventListener("deviceready", onDeviceReady, false);
 		
 		function onDeviceReady() {
+			alert('onDeviceReady triggered');
 			document.addEventListener("online", onOnline, false);
 			document.addEventListener("offline", onOffline, false);
 		}
