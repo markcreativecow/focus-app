@@ -9,25 +9,28 @@
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);
-		document.addEventListener("offline", function(){alert("You're offline")}, false);
-		document.addEventListener("online", function(){alert("You're online")}, false);
+		
 		var connectionStatus = false;
+		
 		function onDeviceReady() {
 			setInterval(function () {
-				connectionStatus = navigator.onLine ? 'online' : 'offline';
+				connectionStatus = navigator.onLine ? true : false;
 			}, 100);
-			alert(connectionStatus);
-			$('#content').hide();
-			$('#busy').show();
+			$(document).on('click', '#check-connection', function () {
+				alert(connectionStatus);
+				return false;
+			});
+			/* $('#busy').show();
 			setTimeout(function(){
 				$('#busy').hide();
 				window.open('http://docs.google.com/viewer?url=http%3A%2F%2Fwww.focus-education.co.uk%2Fimages%2Fprogression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
 				// window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
-			}, 3000);
+			}, 3000); */
 		}
 		</script>
     </head>
     <body>
+		<a href="#" id="check-connection">Click me</a>
         <div id="busy">
             <img src="img/loading.gif" />
             <p>LOADING</p>
