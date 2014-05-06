@@ -8,14 +8,15 @@
 		<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		function onLoad() {
-			document.addEventListener("deviceready", onDeviceReady, false);
-		}
+		document.addEventListener("deviceready", onDeviceReady, false);
+		
 		function onDeviceReady() {
 			document.addEventListener("online", onOnline, false);
 			document.addEventListener("offline", onOffline, false);
 		}
+		
 		function onOnline() {
+			alert('onOnline triggered');
 			$('#content').hide();
 			$('#busy').show();
 			setTimeout(function(){
@@ -25,6 +26,7 @@
 			}, 3000);
 		}
 		function onOffline() {
+			alert('onOffline triggered');
 			$('#content').show();
 		}
 		</script>
