@@ -70,6 +70,9 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
+#content {
+	display: none;
+}
 #busy {
     background-color: #F9F9F9;
     border: 1px solid #F9F9F9;
@@ -99,26 +102,4 @@ html, body {
 #busy p {
     font-size: 16px;
     font-weight: bold;
-}
-
-
-.theiframewrap { 
-	width: 320px; 
-	margin:0px; 
-	padding: 0px; 
-	position:relative; 
-	overflow:hidden; 
-}
-.theiframeid { 
-	height:30000px;
-	width:640px;
-	margin:0px; 
-
-	-ms-zoom: 0.30;
-	-moz-transform: scale(0.30);
-	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.30);
-	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.30);
-	-webkit-transform-origin: 0 0;
 }
