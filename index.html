@@ -8,11 +8,8 @@
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		function onLoad() {
-			document.addEventListener("online", onOnline, false);
-			document.addEventListener("offline", onOffline, false);
-		}
-		function onOnline() {
+		document.addEventListener("deviceready", onDeviceReady, false);
+		function onDeviceReady() {
 			$('#content').hide();
 			$('#busy').show();
 			setTimeout(function(){
@@ -21,13 +18,9 @@
 				// window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
 			}, 3000);
 		}
-		function onOffline() {
-			$('#content').show();
-		}
 		</script>
     </head>
-    <body onload="onLoad()">
-		<div id="content">Conenct to the Internet.</div>
+    <body>
         <div id="busy">
             <img src="img/loading.gif" />
             <p>LOADING</p>
