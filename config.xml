@@ -45,14 +45,20 @@
     <icon src="res/icon/ios/icon-60-2x.png" 		gap:platform="ios" 		width="120" height="120" />
     <icon src="res/icon/ios/icon-76-2x.png" 		gap:platform="ios" 		width="152" height="152" />
 	
-	<gap:splash gap:density="hdpi" gap:platform="android" src="res/screen/android/screen-hdpi-landscape.png" />
-	<gap:splash gap:density="hdpi" gap:platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
-	<gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-landscape.png" />
-	<gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
-	<gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-landscape.png" />
-	<gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait" />
-	<gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-landscape.png" />
-	<gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
+	<!-- Define app icon for each platform. -->
+	<icon src="res/icon/android/icon-36-ldpi.png" 	gap:platform="android" gap:density="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png" 	gap:platform="android" gap:density="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png" 	gap:platform="android" gap:density="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png" 	gap:platform="android" gap:density="xhdpi" />
+	
+	<gap:splash src="res/screen/android/screen-hdpi-landscape.png" 		gap:density="hdpi" 	gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-hdpi-portrait.png" 		gap:density="hdpi" 	gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-ldpi-landscape.png" 		gap:density="ldpi" 	gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-ldpi-portrait.png" 		gap:density="ldpi" 	gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-mdpi-landscape.png" 		gap:density="mdpi" 	gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-mdpi-portrait" 			gap:density="mdpi" 	gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-xhdpi-landscape.png" 	gap:density="xhdpi" gap:platform="android" />
+	<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" 		gap:density="xhdpi" gap:platform="android" />
 	
 	<!-- iPhone and iPod Touch -->
 	<gap:splash src="res/screen/ios/screen-iphone-portrait.png"     		gap:platform="ios" width="320"  height="480" />
