@@ -11,7 +11,12 @@
 		document.addEventListener("deviceready", onDeviceReady, false);
 		document.addEventListener("offline", function(){alert("You're offline")}, false);
 		document.addEventListener("online", function(){alert("You're online")}, false);
+		var connectionStatus = false;
 		function onDeviceReady() {
+			setInterval(function () {
+				connectionStatus = navigator.onLine ? 'online' : 'offline';
+			}, 100);
+			alert(connectionStatus);
 			$('#content').hide();
 			$('#busy').show();
 			setTimeout(function(){
