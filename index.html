@@ -8,16 +8,8 @@
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		document.addEventListener("deviceready", onDeviceReady, false);
-		
+		document.addEventListener("deviceready", onDeviceReady, false);		
 		function onDeviceReady() {
-			alert('onDeviceReady triggered');
-			document.addEventListener("online", onOnline, false);
-			document.addEventListener("offline", onOffline, false);
-		}
-		
-		function onOnline() {
-			alert('onOnline triggered');
 			$('#content').hide();
 			$('#busy').show();
 			setTimeout(function(){
@@ -25,10 +17,6 @@
 				window.open('http://docs.google.com/viewer?url=http%3A%2F%2Fwww.focus-education.co.uk%2Fimages%2Fprogression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
 				// window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
 			}, 3000);
-		}
-		function onOffline() {
-			alert('onOffline triggered');
-			$('#content').show();
 		}
 		</script>
     </head>
