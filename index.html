@@ -10,15 +10,9 @@
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);
 		
-		var networkState = navigator.connection.type;
-		
-		alert(networkState);
-		
 		function onDeviceReady() {
-			$('#busy').show();
-			setInterval(function () {
-				connectionStatus = navigator.onLine ? true : false;
-			}, 100);			
+			checkConnection();
+			/* $('#busy').show();
 			setInterval(function () {
 				if (connectionStatus === true) {
 					$('#busy').hide();
@@ -26,7 +20,27 @@
 				} else {
 					$('#content').show();					
 				}
-			}, 3000);
+			}, 3000); */
+		}
+		
+		function checkConnection(){
+		  var networkState = navigator.connection.type;
+
+		  setTimeout(function() {
+			networkState = navigator.connection.type;
+			
+			var states = {};
+			states[Connection.UNKNOWN]  = 'Unknown connection';
+			states[Connection.ETHERNET] = 'Ethernet connection';
+			states[Connection.WIFI]     = 'WiFi connection';
+			states[Connection.CELL_2G]  = 'Cell 2G connection';
+			states[Connection.CELL_3G]  = 'Cell 3G connection';
+			states[Connection.CELL_4G]  = 'Cell 4G connection';
+			states[Connection.NONE]     = 'No network connection';
+			
+			alert('Connection type: ' + states[networkState]);
+			
+		  }, 750);
 		}
 		</script>
     </head>
