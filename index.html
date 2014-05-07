@@ -8,39 +8,17 @@
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		document.addEventListener("deviceready", onDeviceReady, false);
-		
+		document.addEventListener("deviceready", onDeviceReady, false);		
 		function onDeviceReady() {
-			checkConnection();
-			/* $('#busy').show();
+			$('#busy').show();
 			setInterval(function () {
-				if (connectionStatus === true) {
-					$('#busy').hide();
+				$('#busy').hide();
+				try {
 					window.open('http://docs.google.com/viewer?url=http%3A%2F%2Fwww.focus-education.co.uk%2Fimages%2Fprogression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
-				} else {
-					$('#content').show();					
+				} catch(e) {
+					$('#content').show();
 				}
-			}, 3000); */
-		}
-		
-		function checkConnection(){
-		  var networkState = navigator.connection.type;
-
-		  setTimeout(function() {
-			networkState = navigator.connection.type;
-			
-			var states = {};
-			states[Connection.UNKNOWN]  = 'Unknown connection';
-			states[Connection.ETHERNET] = 'Ethernet connection';
-			states[Connection.WIFI]     = 'WiFi connection';
-			states[Connection.CELL_2G]  = 'Cell 2G connection';
-			states[Connection.CELL_3G]  = 'Cell 3G connection';
-			states[Connection.CELL_4G]  = 'Cell 4G connection';
-			states[Connection.NONE]     = 'No network connection';
-			
-			alert('Connection type: ' + states[networkState]);
-			
-		  }, 750);
+			}, 3000);
 		}
 		</script>
     </head>
