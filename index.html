@@ -13,17 +13,12 @@
 			$('#busy').show();
 			setInterval(function () {
 				$('#busy').hide();
-				try {
-					window.open('http://docs.google.com/viewer?url=http%3A%2F%2Fwww.focus-education.co.uk%2Fimages%2Fprogression-in-the-national-curriculum-2014-app-version.pdf', '_blank', 'location=yes');
-				} catch(e) {
-					$('#content').show();
-				}
+				window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'location=yes,EnableViewPortScale=yes');
 			}, 3000);
 		}
 		</script>
     </head>
     <body>
-		<div id="content">No Internet Connection</div>
         <div id="busy">
             <img src="img/loading.gif" />
             <p>LOADING</p>
