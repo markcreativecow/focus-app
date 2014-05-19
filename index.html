@@ -9,16 +9,29 @@
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);		
+		var topics = [
+			{"name":"Art","icon":"art"},
+			{"name":"Computing","icon":"computing"},
+			{"name":"Design Technology","icon":"design-technology"},
+			{"name":"English","icon":"english"},
+			{"name":"Geography","icon":"geography"},
+			{"name":"History","icon":"history"},
+			{"name":"Languages","icon":"languages"},
+			{"name":"Mathematics","icon":"mathematics"},
+			{"name":"Music","icon":"music"},
+			{"name":"Physical Education","icon":"physical-education"},
+			{"name":"Science","icon":"science"}
+		];
 		function onDeviceReady() {
-			$('#busy').show();
-			setInterval(function () {
-				$('#busy').hide();
-				window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'location=yes,EnableViewPortScale=yes');
-			}, 3000);
+			$('ul#topicList li').remove();
+			$.each(topics, function(index, item) {
+				$('ul#topicList').append('<li class="icon ' + item.icon + '"><a href=""><h2>' + item.name + '</h2><div class="clearfix"></div></a></li>');
+			});		
 		}
 		</script>
     </head>
     <body>
+		<ul id="topicList"></ul>
         <div id="busy">
             <img src="img/loading.gif" />
             <p>LOADING</p>
