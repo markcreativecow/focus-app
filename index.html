@@ -7,14 +7,13 @@
         <link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8"src="js/fileopener.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);		
 		function onDeviceReady() {
 			$('#busy').show();
 			setInterval(function () {
 				$('#busy').hide();
-				window.plugins.fileOpener.open("./pdf/progression-in-the-national-curriculum-2014-app-version.pdf");
+				window.open('pdf/progression-in-the-national-curriculum-2014-app-version.pdf', '_self', 'location=yes,EnableViewPortScale=yes');
 			}, 3000);
 		}
 		</script>
