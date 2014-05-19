@@ -81,7 +81,7 @@ ul#topicList li {
 ul#topicList li img {
 	display: block;
 	height: 40px;
-	margni: 0 auto;
+	margin: 0 auto;
 	width: 40px;
 }
 ul#topicList li h2 {
@@ -89,6 +89,8 @@ ul#topicList li h2 {
 	font-size: 14px;
 	font-weight: bold;
 	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 #busy {
