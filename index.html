@@ -25,7 +25,7 @@
 		function onDeviceReady() {
 			$('ul#topicList li').remove();
 			$.each(topics, function(index, item) {
-				$('ul#topicList').append('<li class="icon ' + item.icon + '"><a href=""><h2>' + item.name + '</h2><div class="clearfix"></div></a></li>');
+				$('ul#topicList').append('<li><a href=""><img src="../img/icons/' + item.icons + '.png" alt="' + item.name + '" width="40" height="40" /><h2>' + item.name + '</h2><div class="clearfix"></div></a></li>');
 			});		
 		}
 		</script>

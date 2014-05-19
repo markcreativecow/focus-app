@@ -72,39 +72,14 @@ ul#topicList {
     
 }
 ul#topicList li {
-    border-bottom: 2px solid #BF2026;
-    clear: both;
+	float: left;
     display: block;
-    padding: 10px 12px;
+	margin-bottom: 20px;
+	width: 33%;
 }
-ul#topicList li:active {
-    background-color: #c8c8c8;
+ul#topicList li h2 {
+	color: #000000;
 }
-ul#topicList li:last-child {
-    border-bottom: none;
-}
-ul#topicList li a {
-    color: #154B89;
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-    text-decoration: none;
-}
-ul#topicList li.icon a {
-    padding-left: 40px;
-}
-ul#topicList li.art { background: transparent url('../img/icons/art.png') no-repeat 10px center; }
-ul#topicList li.computing { background: transparent url('../img/icons/computing.png') no-repeat 10px center; }
-ul#topicList li.design-technology { background: transparent url('../img/icons/design-technology.png') no-repeat 10px center; }
-ul#topicList li.english { background: transparent url('../img/icons/english.png') no-repeat 10px center; }
-ul#topicList li.geography { background: transparent url('../img/icons/geography.png') no-repeat 10px center; }
-ul#topicList li.history { background: transparent url('../img/icons/history.png') no-repeat 10px center; }
-ul#topicList li.languages { background: transparent url('../img/icons/languages.png') no-repeat 10px center; }
-ul#topicList li.mathematics { background: transparent url('../img/icons/mathematics.png') no-repeat 10px center; }
-ul#topicList li.music { background: transparent url('../img/icons/music.png') no-repeat 10px center; }
-ul#topicList li.physical-education { background: transparent url('../img/icons/physical-education.png') no-repeat 10px center; }
-ul#topicList li.science { background: transparent url('../img/icons/science.png') no-repeat 10px center; }
 
 #busy {
     background-color: #F9F9F9;
