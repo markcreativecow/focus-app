@@ -4,13 +4,6 @@
 	<name>Progression in the New National Curriculum</name>
 	<description>This new APP version of our popular 'mini' book outlines the content of the new (2014) National Curriculum in a handy and easy to use format. The content for reading, writing and mathematics is outlined not only by year group but also by strand or element. This makes planning for differentiation much easier as you can track an element of the curriculum from one year group to another. Content for foundation subjects is outlined by key stage expectations.</description>
 	
-	<feature name="InAppBrowser">
-		<param name="ios-package" value="CDVInAppBrowser" />
-	</feature>
-	<feature name="SplashScreen">
-		<param name="ios-package" value="CDVSplashScreen" />
-	</feature>
-	
 	<gap:config-file platform="ios" parent="UIStatusBarHidden">
 		<true/>
 	</gap:config-file>
