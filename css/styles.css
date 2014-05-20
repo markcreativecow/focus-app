@@ -78,6 +78,9 @@ ul#topicList li {
 	text-align: center;
 	width: 33%;
 }
+ul#topicList li a {
+	text-decoration: none;
+}
 ul#topicList li img {
 	display: block;
 	height: 40px;

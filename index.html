@@ -22,11 +22,18 @@
 			{"name":"Physical Education","icon":"physical-education"},
 			{"name":"Science","icon":"science"}
 		];
+		function openPDF(src) {
+			window.open('pdf/' + src + '.pdf', '_blank', 'location=yes,EnableViewPortScale=yes');
+		}
 		function onDeviceReady() {
 			$('ul#topicList li').remove();
 			$.each(topics, function(index, item) {
-				$('ul#topicList').append('<li><a href=""><img src="img/icons/' + item.icon + '.png" alt="' + item.name + '" width="40" height="40" /><h2>' + item.name + '</h2><div class="clearfix"></div></a></li>');
-			});		
+				$('ul#topicList').append('<li class="' + item.icon + '"><img src="img/icons/' + item.icon + '.png" alt="' + item.name + '" width="40" height="40" /><h2>' + item.name + '</h2><div class="clearfix"></div></li>');
+			});
+			$('ul#topicList li').click(function(){
+				var src = $(this).attr('class');
+				openPDF(src);
+			});
 		}
 		</script>
     </head>
