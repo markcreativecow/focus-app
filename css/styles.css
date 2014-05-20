@@ -68,15 +68,30 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
+.header {
+	border-bottom: 2px solid #2BB673;
+    height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+}
+#wrapper {
+    bottom: 0;
+    overflow: auto;
+    position: absolute;
+    top: 75px;
+    width: 100%;
+} 
 ul#topicList {
     
 }
 ul#topicList li {
 	float: left;
     display: block;
-	margin-bottom: 20px;
 	text-align: center;
-	width: 33%;
+	margin: 0 5% 20px;
+	width: 40%;
 }
 ul#topicList li a {
 	text-decoration: none;
