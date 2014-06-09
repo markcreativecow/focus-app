@@ -68,6 +68,18 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
+.ios7-detected > div {
+	margin-top:20px;
+}
+.ios7-detected .status-bar-bump {
+	z-index: 9999;
+	height:20px;
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	background:rgba(0,0,0,1);
+}
 .header {
 	border-bottom: 2px solid #2BB673;
     height: 75px;
