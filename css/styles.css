@@ -100,7 +100,7 @@ html, body {
     position: absolute;
     top: 75px;
     width: 100%;
-} 
+}
 ul#topicList {
     margin-top: 20px;
 }
@@ -108,8 +108,8 @@ ul#topicList li {
 	float: left;
     display: block;
 	text-align: center;
-	margin: 0 5% 20px;
-	width: 40%;
+	margin: 0 2% 20px;
+	width: 28%;
 }
 ul#topicList li a {
 	text-decoration: none;
