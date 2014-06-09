@@ -107,6 +107,7 @@ ul#topicList {
 ul#topicList li {
 	float: left;
     display: block;
+	height: 100px;
 	text-align: center;
 	margin: 0 2% 20px;
 	width: 29%;
