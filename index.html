@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8"src="js/iscroll.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		document.addEventListener("deviceready", onDeviceReady, false);		
+		document.addEventListener("deviceready", onDeviceReady, false);
+		var scroll;
 		var topics = [
 			{"name":"Art","icon":"art"},
 			{"name":"Computing","icon":"computing"},
@@ -34,6 +36,13 @@
 				var src = $(this).attr('class');
 				openPDF(src);
 			});
+			setTimeout(function () {
+				scroll = new iScroll('wrapper', {
+					vScrollbar: false,
+					hScrollbar: false,
+					hScroll: false
+				});
+			}, 100);
 		}
 		</script>
     </head>
