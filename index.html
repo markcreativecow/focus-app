@@ -5,37 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="css/styles.css" />
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
-		<script type="text/javascript" charset="utf-8">
-		document.addEventListener("deviceready", onDeviceReady, false);		
-		var topics = [
-			{"name":"Art","icon":"art"},
-			{"name":"Computing","icon":"computing"},
-			{"name":"Design Technology","icon":"design-technology"},
-			{"name":"English","icon":"english"},
-			{"name":"Geography","icon":"geography"},
-			{"name":"History","icon":"history"},
-			{"name":"Languages","icon":"languages"},
-			{"name":"Mathematics","icon":"mathematics"},
-			{"name":"Music","icon":"music"},
-			{"name":"Physical Education","icon":"physical-education"},
-			{"name":"Science","icon":"science"}
-		];
-		function openPDF(src) {
-			window.open('pdf/' + src + '.pdf', '_blank', 'location=no,EnableViewPortScale=yes');
-		}
-		function onDeviceReady() {
-			$('ul#topicList li').remove();
-			$.each(topics, function(index, item) {
-				$('ul#topicList').append('<li class="' + item.icon + '"><img src="img/icons/' + item.icon + '.png" alt="' + item.name + '" /></li>');
-			});
-			$('ul#topicList li').click(function(){
-				var src = $(this).attr('class');
-				openPDF(src);
-			});
-		}
-		</script>
     </head>
     <body>
 		<div id="header" class="header">
@@ -46,5 +15,8 @@
         <div id="wrapper">
 			<ul id="topicList"></ul>
         </div>
+        <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8"src="js/iscroll.min.js"></script>
+        <script type="text/javascript" charset="utf-8"src="js/core.js"></script>
     </body>
 </html>
