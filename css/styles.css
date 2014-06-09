@@ -108,7 +108,7 @@ ul#topicList li {
 	float: left;
     display: block;
 	text-align: center;
-	margin: 0 1% 20px;
+	margin: 0 20px;
 	width: 32%;
 }
 ul#topicList li a {
@@ -116,7 +116,7 @@ ul#topicList li a {
 }
 ul#topicList li img {
 	display: block;
-	height: 50%;
+	height: 80%;
 	margin: 0 auto;
-	width: 50%;
+	width: 80%;
 }
