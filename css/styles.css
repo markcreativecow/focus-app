@@ -108,8 +108,8 @@ ul#topicList li {
 	float: left;
     display: block;
 	text-align: center;
-	margin: 0 2% 20px;
-	width: 28%;
+	margin: 0 1% 20px;
+	width: 32%;
 }
 ul#topicList li a {
 	text-decoration: none;
@@ -119,13 +119,4 @@ ul#topicList li img {
 	height: 50%;
 	margin: 0 auto;
 	width: 50%;
-}
-ul#topicList li h2 {
-	color: #000000;
-	font-size: 14px;
-	font-weight: bold;
-	margin-top: 5px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
 }
