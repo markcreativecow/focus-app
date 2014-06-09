@@ -68,7 +68,7 @@ html, body {
 	width: 100%;
 }
 .header {
-	border-bottom: 2px solid #2BB673;
+	border-bottom: 5px solid #2BB673;
 	background: #ffffff;
 	background: -moz-linear-gradient(top, #ffffff 0%, #2bb673 30%, #2bb673 40%, #1d915c 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(30%,#2bb673), color-stop(40%,#2bb673), color-stop(100%,#1d915c));
@@ -79,13 +79,9 @@ html, body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1d915c',GradientType=0 );
     height: 75px;
     position: absolute;
-    text-align: right;
+    text-align: center;
     top: 0px;
     width: 100%;
-}
-#logo {
-	margin-left: 10px;
-	margin-top: 10px;
 }
 #wrapper {
 	background: #ffffff;
@@ -103,22 +99,23 @@ html, body {
     width: 100%;
 } 
 ul#topicList {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 ul#topicList li {
 	float: left;
     display: block;
 	text-align: center;
-	margin: 0 5% 20px;
-	width: 40%;
+	margin: 0 30px 20px;
+	width: 260px;
 }
 ul#topicList li a {
 	text-decoration: none;
 }
 ul#topicList li img {
 	display: block;
+	height: 50%;
 	margin: 0 auto;
-	width: 60%;
+	width: 50%;
 }
 ul#topicList li h2 {
 	color: #000000;
