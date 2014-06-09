@@ -108,8 +108,8 @@ ul#topicList li {
 	float: left;
     display: block;
 	text-align: center;
-	margin: 0 20px;
-	width: 32%;
+	margin: 0 50px;
+	width: 30%;
 }
 ul#topicList li a {
 	text-decoration: none;
