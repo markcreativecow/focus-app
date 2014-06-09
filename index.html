@@ -25,24 +25,7 @@
 		function openPDF(src) {
 			window.open('pdf/' + src + '.pdf', '_blank', 'location=yes');
 		}
-		function ios7StatusBarBump(detectedClass,statusBarElementClass,nonIOS7test) {
-		  var userAgentStr = /(iPad|iPhone);.*CPU.*OS 7_\d/i,
-			  statusBarHtml = "<span class="+statusBarElementClass+"></span>";
-
-			  if(navigator.userAgent.match(userAgentStr)){ // is ios7
-				addElement(detectedClass,statusBarHtml);
-			  }
-		  
-			  if(nonIOS7test == 1){
-				addElement(detectedClass,statusBarHtml);
-			  }
-
-			  function addElement(detectedClass,statusBarHtml){
-				$('body').addClass(detectedClass).prepend(statusBarHtml);
-			  }
-		}
 		function onDeviceReady() {
-			ios7StatusBarBump('ios7-detected','status-bar-bump',0);
 			$('ul#topicList li').remove();
 			$.each(topics, function(index, item) {
 				$('ul#topicList').append('<li class="' + item.icon + '"><img src="img/icons/' + item.icon + '.png" alt="' + item.name + '" width="40" height="40" /><h2>' + item.name + '</h2><div class="clearfix"></div></li>');
