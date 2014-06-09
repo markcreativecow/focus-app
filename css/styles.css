@@ -57,7 +57,6 @@ table {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -70,13 +69,33 @@ html, body {
 }
 .header {
 	border-bottom: 2px solid #2BB673;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #2bb673 30%, #2bb673 40%, #1d915c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(30%,#2bb673), color-stop(40%,#2bb673), color-stop(100%,#1d915c));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#2bb673 30%,#2bb673 40%,#1d915c 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#2bb673 30%,#2bb673 40%,#1d915c 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#2bb673 30%,#2bb673 40%,#1d915c 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#2bb673 30%,#2bb673 40%,#1d915c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1d915c',GradientType=0 );
     height: 75px;
     position: absolute;
-    text-align: center;
+    text-align: right;
     top: 0px;
     width: 100%;
 }
+#logo {
+	margin-left: 10px;
+	margin-top: 10px;
+}
 #wrapper {
+	background: #ffffff;
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e6e6e6 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6));
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#e6e6e6 100%);
+	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#e6e6e6 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#e6e6e6 100%);
+	background: radial-gradient(ellipse at center, #ffffff 0%,#e6e6e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=1 );
     bottom: 0;
     overflow: auto;
     position: absolute;
@@ -84,7 +103,7 @@ html, body {
     width: 100%;
 } 
 ul#topicList {
-    
+    margin-top: 10px;
 }
 ul#topicList li {
 	float: left;
@@ -98,46 +117,15 @@ ul#topicList li a {
 }
 ul#topicList li img {
 	display: block;
-	height: 40px;
 	margin: 0 auto;
-	width: 40px;
+	width: 60%;
 }
 ul#topicList li h2 {
 	color: #000000;
 	font-size: 14px;
 	font-weight: bold;
+	margin-top: 5px;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-}
-
-#busy {
-    background-color: #F9F9F9;
-    border: 1px solid #F9F9F9;
-    display: none;
-    height: 90px;
-    left: 50%;
-    margin-top: -45px;
-    margin-left: -70px;
-    padding-top: 15px;
-    position: fixed;
-    text-align: center;
-    top: 50%;
-    width: 140px;
-    z-index: 100;
-    /* CSS3 */
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0 0 10px 0px #6A6A6A;
-    -webkit-box-shadow: 0 0 10px 0px #6A6A6A;
-    box-shadow: 0 0 10px 0px #6A6A6A;
-}
-#busy img {
-    display: block;
-    margin: 0 auto 10px auto;
-}
-#busy p {
-    font-size: 16px;
-    font-weight: bold;
 }
