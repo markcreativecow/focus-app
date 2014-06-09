@@ -102,6 +102,7 @@ html, body {
     width: 100%;
 }
 ul#topicList {
+	height: auto;
     margin-top: 20px;
 }
 ul#topicList li {
