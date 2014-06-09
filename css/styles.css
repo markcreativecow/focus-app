@@ -70,17 +70,20 @@ html, body {
 }
 .header {
 	border-bottom: 2px solid #2BB673;
-    height: 75px;
+    height: 120px;
     position: absolute;
     text-align: center;
     top: 0px;
     width: 100%;
 }
+.header #logo img {
+	margin-top: 20px;
+}
 #wrapper {
     bottom: 0;
     overflow: auto;
     position: absolute;
-    top: 75px;
+    top: 95px;
     width: 100%;
 } 
 ul#topicList {
