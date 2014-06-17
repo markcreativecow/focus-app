@@ -12,9 +12,10 @@
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);
 		var scroll;
+		var id = getUrlVars()["id"];
 		function onDeviceReady() {
 			$('ul#topicList li').remove();
-			$.each(getParentTopics(), function(index, item) {
+			$.each(getChildTopics(id), function(index, item) {
 				var listitem = '<li class="icon icon-' + item.id + '">';
 				if (item.child) {
 					listitem += '<a href="topicdetails?id=' + item.id + '">';
