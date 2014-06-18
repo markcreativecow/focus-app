@@ -115,8 +115,3 @@ ul#topicList li .icon {
 ul#topicList li h2 {
 	float: left;
 }
-ul#topicList li .arrow {
-	float: right;
-	margin-left: 20px;
-	width: 35px;
-}
