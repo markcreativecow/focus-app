@@ -51,6 +51,15 @@ var topics = [
 	{'id':46,'name':'Earth and Space','icon':'science.png','child':false,'parent':11},
 	{'id':47,'name':'Electricity','icon':'science.png','child':false,'parent':11}
 ];
+function getTopic(id) {
+	var items = [];
+	$.each(topics, function(index, item){
+		if (item.id == id) {
+			items.push(item);
+		}
+	});
+	return items;	
+}
 function getParentTopics() {
 	var items = [];
 	$.each(topics, function(index, item){
@@ -82,7 +91,7 @@ function getUrlVars() {
     }
     return vars;
 }
-$('.clickable').click(function(){
+$('.clickable').live('click', function() {
 	var src = $(this).attr('id').substring(6);
 	openPDF(src);
 });

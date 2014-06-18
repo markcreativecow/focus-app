@@ -85,9 +85,9 @@ html, body {
 #back {
 	border-right: 1px solid #FFFFFF;
 	color: #FFFFFF;
-	height: 75px;
+	height: 70px;
 	left: 0;
-	line-height: 75px;
+	line-height: 70px;
 	padding: 0 20px;
 	position: absolute;
 	text-decoration: none;
@@ -123,6 +123,10 @@ ul#topicList li {
     display: block;
 	height: 50px;
 	padding: 0 20px;
+}
+ul#topicList li:active {
+	background-color: #2BB673;
+	color: #FFFFFF;
 }
 ul#topicList li a {
 	color: #231F20;
