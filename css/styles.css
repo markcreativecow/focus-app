@@ -82,8 +82,25 @@ html, body {
     top: 0px;
     width: 100%;
 }
+#back {
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	height: 55px;
+	left: 0;
+	line-height: 55px;
+	margin-left: -47px;
+	padding: 0 20px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
 #logo {
-	margin: 10px auto;
+	height: 55px;
+	left: 50%;
+	margin-left: -47px;
+	position: absolute;
+	top: 0;
+	width: 94px;
 }
 #wrapper {
 	background: #ffffff;
@@ -114,7 +131,7 @@ ul#topicList li a {
 ul#topicList li .icon {
 	float: left;
 	display: block;
-	margin: 5px 20px 0;
+	margin: 5px 20px 0 0;
 	width: 35px;
 }
 ul#topicList li .text {
