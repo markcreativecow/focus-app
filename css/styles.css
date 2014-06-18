@@ -140,6 +140,12 @@ ul#topicList li .text {
 	height: 50px;
 	line-height: 50px;
 }
+ul#topicList li .arrow {
+	float: right;
+	display: block;
+	margin: 5px 0 0 20px;
+	width: 19px;
+}
 ul#topicList li .text h2 {
 	display: block;
 }
