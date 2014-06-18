@@ -91,7 +91,9 @@ function getUrlVars() {
     }
     return vars;
 }
-$('.clickable').live('click', function() {
-	var src = $(this).attr('id').substring(6);
-	openPDF(src);
+$(window).load(function(){	
+	$('.clickable').live('click', function() {
+		var src = $(this).attr('id').substring(6);
+		openPDF(src);
+	});
 });
