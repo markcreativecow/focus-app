@@ -124,8 +124,6 @@ ul#topicList li {
 	height: 50px;
 	padding: 0 20px;
 }
-ul#topicList li:hover,
-ul#topicList li:hover a,
 ul#topicList li:active,
 ul#topicList li:active a {
 	background-color: #2BB673;
