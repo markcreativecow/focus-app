@@ -79,12 +79,11 @@ html, body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1d915c',GradientType=0 );
     height: 75px;
     position: absolute;
-    text-align: center;
     top: 0px;
     width: 100%;
 }
 #logo {
-	margin-top: 10px;
+	margin: 10px auto;
 }
 #wrapper {
 	background: #ffffff;
@@ -104,12 +103,20 @@ html, body {
 ul#topicList li {
 	border-bottom: 1px solid #CCCCCC;
     display: block;
-	padding: 5px 20px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
 }
 ul#topicList li .icon {
 	float: left;
+	margin-right: 20px;
 	width: 35px;
 }
 ul#topicList li h2 {
-	float: left;	
+	float: left;
+}
+ul#topicList li .arrow {
+	float: right;
+	margin-left: 20px;
+	width: 35px;
 }
