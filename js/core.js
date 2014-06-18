@@ -83,6 +83,6 @@ function getUrlVars() {
     return vars;
 }
 $('.clickable').click(function(){
-	var src = $(this).attr('id').substring(6) + '.pdf';
+	var src = $(this).attr('id').substring(6);
 	openPDF(src);
 });
