@@ -124,10 +124,6 @@ ul#topicList li {
 	height: 50px;
 	padding: 0 20px;
 }
-ul#topicList li:active {
-	background-color: #2BB673;
-	color: #FFFFFF;
-}
 ul#topicList li a {
 	color: #231F20;
 	display: block;

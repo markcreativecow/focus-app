@@ -15,9 +15,11 @@
 		function onDeviceReady() {
 			$('ul#topicList li').remove();
 			$.each(getParentTopics(), function(index, item) {
-				var listitem = '<li id="topic-' + item.id + '" class="clickable clearfix">';
+				var listitem = '';
 				if (item.child) {
-					listitem += '<a href="topicdetails.html?id=' + item.id + '">';
+					listitem += '<li id="topic-' + item.id + '" class="clearfix"><a href="topicdetails.html?id=' + item.id + '">';
+				} else {
+					listitem = '<li id="topic-' + item.id + '" class="clickable clearfix">';
 				}
 				listitem += '<div class="icon"><img src="img/icons/' + item.icon + '" width="35" height="35" /></div>';
 				listitem += '<div class="text"><h2>' + item.name + '</h2></div><div class="clearfix"></div>';
