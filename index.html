@@ -17,7 +17,7 @@
 			$.each(getParentTopics(), function(index, item) {
 				var listitem = '<li class="icon icon-' + item.id + '">';
 				if (item.child) {
-					listitem += '<a href="topicdetails?id=' + item.id + '">';
+					listitem += '<a href="topicdetails.html?id=' + item.id + '">';
 				}
 				listitem += '<h2>' + item.name + '</h2><div class="clearfix"></div>';
 				if (item.child) {

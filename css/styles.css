@@ -102,22 +102,10 @@ html, body {
     width: 100%;
 }
 ul#topicList {
-	height: auto;
     margin-top: 20px;
 }
 ul#topicList li {
-	float: left;
     display: block;
-	text-align: center;
-	margin: 0 2% 20px;
-	width: 29%;
-}
-ul#topicList li a {
-	text-decoration: none;
-}
-ul#topicList li img {
-	display: block;
-	height: 80%;
-	margin: 0 auto;
-	width: 80%;
+	height: 45px;
+	line-height: 45px;
 }
