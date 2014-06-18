@@ -15,7 +15,7 @@
 		function onDeviceReady() {
 			$('ul#topicList li').remove();
 			$.each(getParentTopics(), function(index, item) {
-				var listitem = '<li id="topic-' + item.id + '">';
+				var listitem = '<li id="topic-' + item.id + '" class="clickable">';
 				if (item.child) {
 					listitem += '<a href="topicdetails.html?id=' + item.id + '">';
 				}

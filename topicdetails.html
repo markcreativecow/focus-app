@@ -16,7 +16,7 @@
 		function onDeviceReady() {
 			$('ul#topicList li').remove();
 			$.each(getChildTopics(id), function(index, item) {
-				var listitem = '<li id="topic-' + item.id + '">';
+				var listitem = '<li id="topic-' + item.id + '" class="clickable">';
 				if (item.child) {
 					listitem += '<a href="topicdetails?id=' + item.id + '">';
 				}
@@ -26,6 +26,14 @@
 				if (item.child) {
 					listitem += '</a>';				
 				}				
+				listitem += '</li>';
+				$('ul#topicList').append(listitem);
+			});
+			$.each(getTopic(id), function(index, item) {
+				var listitem = '<li id="topic-' + item.id + '" class="clickable">';
+				listitem += '<div class="icon"><img src="img/icons/' + item.icon + '" width="35" height="35" /></div>';
+				listitem += '<h2>Read All ' + item.name + '</h2>';
+				listitem += '<div class="arrow"><img src="img/arrow.png" width="28" height="35" /></div><div class="clearfix"></div>';
 				listitem += '</li>';
 				$('ul#topicList').append(listitem);
 			});
