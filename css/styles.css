@@ -107,11 +107,16 @@ ul#topicList li {
 	line-height: 45px;
 	padding: 0 20px;
 }
+ul#topicList li a {
+	display: block;
+}
 ul#topicList li .icon {
 	float: left;
+	display: block;
 	margin-right: 20px;
 	width: 35px;
 }
 ul#topicList li h2 {
 	float: left;
+	display: block;
 }
