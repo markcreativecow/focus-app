@@ -143,8 +143,8 @@ ul#topicList li .text {
 ul#topicList li .arrow {
 	float: right;
 	display: block;
-	margin: 5px 0 0 20px;
-	width: 19px;
+	margin: 12px 0 0 20px;
+	width: 14px;
 }
 ul#topicList li .text h2 {
 	display: block;
