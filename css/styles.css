@@ -101,11 +101,15 @@ html, body {
     top: 75px;
     width: 100%;
 }
-ul#topicList {
-    margin-top: 20px;
-}
 ul#topicList li {
+	border-bottom: 1px solid #CCCCCC;
     display: block;
-	height: 45px;
-	line-height: 45px;
+	padding: 5px 20px;
+}
+ul#topicList li .icon {
+	float: left;
+	width: 35px;
+}
+ul#topicList li h2 {
+	float: left;	
 }
