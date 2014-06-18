@@ -6,9 +6,9 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8"src="js/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8"src="js/iscroll.min.js"></script>
-        <script type="text/javascript" charset="utf-8"src="js/core.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/iscroll.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/core.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);
 		var scroll;
@@ -20,7 +20,7 @@
 					listitem += '<a href="topicdetails.html?id=' + item.id + '">';
 				}
 				listitem += '<div class="icon"><img src="img/icons/' + item.icon + '" width="35" height="35" /></div>';
-				listitem += '<h2>' + item.name + '</h2>';
+				listitem += '<div class="text"><h2>' + item.name + '</h2></div><div class="clearfix"></div>';
 				if (item.child) {
 					listitem += '</a>';				
 				}				

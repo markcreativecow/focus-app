@@ -102,21 +102,27 @@ html, body {
 }
 ul#topicList li {
 	border-bottom: 1px solid #CCCCCC;
+	color: #231F20;
     display: block;
-	height: 45px;
-	line-height: 45px;
+	height: 50px;
 	padding: 0 20px;
 }
 ul#topicList li a {
+	color: #231F20;
 	display: block;
 }
 ul#topicList li .icon {
 	float: left;
 	display: block;
-	margin-right: 20px;
+	margin: 5px 20px 0;
 	width: 35px;
 }
-ul#topicList li h2 {
+ul#topicList li .text {
 	float: left;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+}
+ul#topicList li .text h2 {
 	display: block;
 }
