@@ -31,7 +31,7 @@ var topics = [
 	{'id':27,'name':'Measurement','icon':'mathematics.png','child':false,'parent':8},
 	{'id':28,'name':'Geometry: Properties and Shapes','icon':'mathematics.png','child':false,'parent':8},
 	{'id':29,'name':'Geometry: Position, Direction and Motion','icon':'mathematics.png','child':false,'parent':8},
-	{'id':30,'name':'Statistics','icon':'mathematics.png','child':false,'parent':8},
+	{'id':29,'name':'Statistics','icon':'mathematics.png','child':false,'parent':8},
 	// Science Sub Topics
 	{'id':31,'name':'Science Overview','icon':'science.png','child':false,'parent':11},
 	{'id':32,'name':'Science Strands By Year Group','icon':'science.png','child':false,'parent':11},
@@ -40,15 +40,15 @@ var topics = [
 	{'id':35,'name':'Animals, Including Humans','icon':'science.png','child':false,'parent':11},
 	{'id':36,'name':'Living Things and Habitats','icon':'science.png','child':false,'parent':11},
 	{'id':37,'name':'Evolution and Inheritance','icon':'science.png','child':false,'parent':11},
-	{'id':38,'name':'Rocks','icon':'science.png','child':false,'parent':11},
+	{'id':37,'name':'Rocks','icon':'science.png','child':false,'parent':11},
 	{'id':39,'name':'Everyday Materials','icon':'science.png','child':false,'parent':11},
-	{'id':40,'name':'Properties and Changes of Materials','icon':'science.png','child':false,'parent':11},
+	{'id':39,'name':'Properties and Changes of Materials','icon':'science.png','child':false,'parent':11},
 	{'id':41,'name':'States of Matter','icon':'science.png','child':false,'parent':11},
-	{'id':42,'name':'Light','icon':'science.png','child':false,'parent':11},
-	{'id':43,'name':'Sound','icon':'science.png','child':false,'parent':11},
+	{'id':41,'name':'Light','icon':'science.png','child':false,'parent':11},
+	{'id':41,'name':'Sound','icon':'science.png','child':false,'parent':11},
 	{'id':44,'name':'Forces and Magnets','icon':'science.png','child':false,'parent':11},
 	{'id':45,'name':'Seasonal Changes','icon':'science.png','child':false,'parent':11},
-	{'id':46,'name':'Earth and Space','icon':'science.png','child':false,'parent':11},
+	{'id':45,'name':'Earth and Space','icon':'science.png','child':false,'parent':11},
 	{'id':47,'name':'Electricity','icon':'science.png','child':false,'parent':11}
 ];
 function getParentTopics() {
