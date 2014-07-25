@@ -6,31 +6,15 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="css/styles.css" />
 		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/iscroll.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/core.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		document.addEventListener("deviceready", onDeviceReady, false);
 		var scroll;
-		var id = getUrlVars()["id"];
 		function onDeviceReady() {
-			$('ul#topicList li').remove();
-			$.each(getChildTopics(id), function(index, item) {
-				var listitem = '';
-				if (item.child) {
-					listitem += '<li id="topic-' + item.id + '" class="clearfix"><a href="topicdetails.html?id=' + item.id + '">';
-				} else {
-					listitem = '<li id="topic-' + item.id + '" class="clickable clearfix">';
-				}
-				listitem += '<div class="icon"><img src="img/icons/' + item.icon + '" width="35" height="35" /></div>';
-				listitem += '<div class="text"><h2>' + item.name + '</h2></div>';
-				listitem += '<div class="arrow"><img src="img/arrow.png" width="14" height="25" /></div><div class="clearfix"></div>';
-				if (item.child) {
-					listitem += '</a>';				
-				}
-				listitem += '</li>';
-				$('ul#topicList').append(listitem);
-			});
+			initializeMap();
 			setTimeout(function () {
 				scroll = new iScroll('wrapper', {
 					vScrollbar: true,
@@ -43,13 +27,12 @@
     </head>
     <body>
 		<div id="header" class="header">
-			<a id="back" href="index.html">Back</a>
             <div id="logo">
                 <img src="img/logo.png" width="94" height="55" />
             </div>
         </div>
         <div id="wrapper">
-			<ul id="topicList" class="clearfix"></ul>
+			<div id="map"></div>
         </div>
         <div id="footer" class="footer">
             <ul class="tabs">
@@ -60,9 +43,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html">
+                    <a href="eventslist.html">
                         <img src="img/tabs/viewall@2x.png" height="30" width="30" />
-                        <p>Contact</p>
+                        <p>View All</p>
                     </a>
                 </li>
                 <li>

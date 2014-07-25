@@ -111,11 +111,15 @@ html, body {
 	background: -ms-radial-gradient(center, ellipse cover, #FFFFFF 0%,#E6E6E6 100%);
 	background: radial-gradient(ellipse at center, #FFFFFF 0%,#E6E6E6 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E6E6E6',GradientType=1 );
-    bottom: 0;
+    bottom: 50px;
     overflow: auto;
     position: absolute;
     top: 75px;
     width: 100%;
+}
+#map {
+	height: 100%;
+	width: 100%;
 }
 ul#topicList li {
 	border-bottom: 1px solid #CCCCCC;
@@ -153,4 +157,46 @@ ul#topicList li .arrow {
 }
 ul#topicList li .text h2 {
 	display: block;
+}
+/**********
+ * FOOTER *
+ **********/
+.footer {
+    position: absolute;
+    border-top: 1px solid #838383;
+    background-color: #F9F9F9;
+    color: #FFFFFF;
+    bottom: 0px;
+    height: 49px;
+    width: 100%;
+}
+/**********
+ * TABBAR *
+ **********/
+ul.tabs {
+    margin: 0;
+    padding: 0;
+}
+ul.tabs li {
+    display: block;
+    float:left;
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+ul.tabs li img {
+    display: block;
+    margin: 0 auto;
+}
+ul.tabs li p {
+    color: #929292;
+    font-size: 12px;
+}
+ul.tabs li a {
+    color: #929292;
+    display: block;
+    text-decoration: none;
+}
+ul.tabs li.active a p {
+    color: #007AFF;
 }
