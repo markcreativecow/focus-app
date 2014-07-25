@@ -22,7 +22,7 @@
 					listitem = '<li id="topic-' + item.id + '" class="clickable clearfix">';
 				}
 				listitem += '<div class="icon"><img src="img/icons/' + item.icon + '" width="35" height="35" /></div>';
-				listitem += '<div class="text"><h2>' + item.name + '</h2></div>';
+				listitem += '<div class="text"><h2>' + item.name.substring(0, 25) + '...</h2></div>';
 				listitem += '<div class="arrow"><img src="img/arrow.png" width="14" height="25" /></div><div class="clearfix"></div>';
 				if (item.child) {
 					listitem += '</a>';				
