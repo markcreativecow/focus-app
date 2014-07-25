@@ -88,12 +88,22 @@ function getUrlVars() {
     return vars;
 }
 function initializeMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(53.549181, -2.048264),
-        zoom: 11,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+    var location    = new google.maps.LatLng(53.549181, -2.048264);
+    var type        = google.maps.MapTypeId.ROADMAP;
+    var options = {
+        center:            location,
+        disableDefaultUI:  true,
+        mapTypeControl:    false,
+        mapTypeId:         type,
+        streetViewControl: false,
+        zoom:              11,
+        zoomControl:       false
     };
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var map = new google.maps.Map(document.getElementById('map'), options);
+    var marker = new google.maps.Marker({
+        map:      map,
+        position: location
+    });
 }
 $(window).load(function(){	
 	$('.clickable').live('click', function() {
