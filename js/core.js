@@ -99,11 +99,19 @@ function initializeMap() {
         zoom:              11,
         zoomControl:       false
     };
-    var map = new google.maps.Map(document.getElementById('map'), options);
+    var map = new google.maps.Map(document.getElementById('map'), options);	
+	var content = 'Focus Education (UK) Ltd<br />Talking Point Conference Centre<br />Formerly St Pauls Church<br />Huddersfield Road<br />Scouthead<br />Saddleworth<br />OL4 4AG';
+	var infowindow = new google.maps.InfoWindow({
+	  content: content
+	});  
     var marker = new google.maps.Marker({
         map:      map,
-        position: location
+        position: location,
+		title: 'Focus Education UK Ltd'
     });
+	google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map,marker);
+	});
 }
 $(window).load(function(){	
 	$('.clickable').live('click', function() {
